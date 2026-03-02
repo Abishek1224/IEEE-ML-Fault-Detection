@@ -1,8 +1,12 @@
 # 🔍 Fault Detection using Machine Learning
 
+A machine learning solution for binary fault detection in embedded device systems.
+
+---
+
 ## 📖 Project Overview
-This project focuses on detecting whether a device is operating under normal conditions or experiencing a fault.  
-The classification is performed using 47 numerical features collected from an embedded monitoring system.
+
+This project predicts whether a device is operating normally or experiencing a fault condition using 47 numerical features collected from an embedded monitoring system.
 
 - **Class 0 → Normal**
 - **Class 1 → Faulty**
@@ -13,22 +17,22 @@ This is a binary classification problem.
 
 ## 📂 Dataset Description
 
-- **TRAIN.csv**
-  - 47 input features (F01–F47)
-  - Target column: `Class`
+### TRAIN.csv
+- 47 input features (F01–F47)
+- Target column: `Class`
 
-- **TEST.csv**
-  - 47 input features
-  - `ID` column
-  - No target column (used for prediction)
+### TEST.csv
+- 47 input features
+- `ID` column
+- No target column (used for prediction)
 
 ---
 
 ## ⚙️ Approach
 
-1. Data loaded using **pandas**
+1. Data loaded using pandas
 2. Features separated from target variable
-3. Model trained using **Random Forest Classifier**
+3. Model trained using Random Forest Classifier
 4. Predictions generated for TEST dataset
 5. Final submission file created in required format
 
@@ -36,9 +40,16 @@ This is a binary classification problem.
 
 ## 🧠 Model Used
 
-- RandomForestClassifier  
-- Number of trees: 200  
-- Random state: 42  
+- RandomForestClassifier
+- Number of trees: 200
+- Random state: 42
+
+---
+
+## 📈 Model Performance
+
+- Basic training validation performed
+- Model suitable for binary classification task
 
 ---
 
