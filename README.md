@@ -48,7 +48,7 @@ This is a binary classification problem.
 
 ## 📈 Model Performance
 
-Validation Accuracy: XX%
+Validation Accuracy: 0.90%
 
 The model was evaluated using an 80-20 train-validation split.
 
