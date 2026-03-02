@@ -48,8 +48,9 @@ This is a binary classification problem.
 
 ## 📈 Model Performance
 
-- Basic training validation performed
-- Model suitable for binary classification task
+Validation Accuracy: XX%
+
+The model was evaluated using an 80-20 train-validation split.
 
 ---
 
