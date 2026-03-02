@@ -1,37 +1,52 @@
-Project Title
+# 🔍 Fault Detection using Machine Learning
 
-Fault Detection using Machine Learning
+## 📖 Project Overview
+This project focuses on detecting whether a device is operating under normal conditions or experiencing a fault.  
+The classification is performed using 47 numerical features collected from an embedded monitoring system.
 
-Problem Statement
+- **Class 0 → Normal**
+- **Class 1 → Faulty**
 
-This project predicts whether a device is operating normally or faulty using 47 numerical features.
+This is a binary classification problem.
 
-Approach
+---
 
-Data loaded using pandas
+## 📂 Dataset Description
 
-Random Forest Classifier used
+- **TRAIN.csv**
+  - 47 input features (F01–F47)
+  - Target column: `Class`
 
-Model trained on TRAIN.csv
+- **TEST.csv**
+  - 47 input features
+  - `ID` column
+  - No target column (used for prediction)
 
-Predictions generated for TEST.csv
+---
 
-How to Run
+## ⚙️ Approach
 
-Install Python 3
+1. Data loaded using **pandas**
+2. Features separated from target variable
+3. Model trained using **Random Forest Classifier**
+4. Predictions generated for TEST dataset
+5. Final submission file created in required format
 
-Install required libraries:
+---
 
-pip install pandas scikit-learn
+## 🧠 Model Used
 
-Run the notebook
+- RandomForestClassifier  
+- Number of trees: 200  
+- Random state: 42  
 
-FINAL.csv will be generated
+---
 
-Output Format
+## 🛠️ Installation & Setup
 
-The output file contains:
+### Step 1: Install Python (3.x)
 
-ID
+### Step 2: Install Required Libraries
 
-CLASS (0 or 1)
+```bash
+pip install -r requirements.txt
